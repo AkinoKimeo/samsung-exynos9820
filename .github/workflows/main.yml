@@ -57,7 +57,6 @@ jobs:
                        model=${{ matrix.model }} \
                        name="Cruel"              \
                        toolchain=$TOOLCHAIN      \
-                       +magisk=v24.3             \
                        +nohardening              \
                        +ttl                      \
                        +wireguard                \
@@ -69,8 +68,6 @@ jobs:
                        +boeffla_wl_blocker       \
                        +performance              \
                        +nodebug                  \
-                       +noswap                   \
-                       +fake_config              \
                        +25hz                     \
                        +io_noop                  \
                        +tcp_cubic                \
