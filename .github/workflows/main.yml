@@ -59,18 +59,17 @@ jobs:
                        toolchain=$TOOLCHAIN      \
                        +nohardening              \
                        +ttl                      \
-                       +wireguard                \
+                       -wireguard                \
                        +cifs                     \
                        +sdfat                    \
                        +ntfs                     \
-                       +force_dex_wqhd           \
+                       -force_dex_wqhd           \
                        +morosound                \
-                       +boeffla_wl_blocker       \
+                       -boeffla_wl_blocker       \
                        +nodebug                  \
                        +25hz                     \
                        +io_noop                  \
                        +tcp_cubic                \
-                       +mass_storage             \
                        +sched_performance        \
                        +dtb                      \
                        +magisk=v24.3             \
@@ -79,8 +78,6 @@ jobs:
                        +performance              \
                        +noatime                  \
                        +noksm                    \
-                       +nomodules                \
-                       +usb_serial               \
           2>&1 | tee config.info
 
       - name: Install gcc-aarch64-linux-gnu
