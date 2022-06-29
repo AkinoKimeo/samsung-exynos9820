@@ -74,7 +74,7 @@ jobs:
                        +25hz                     \
                        +io_noop                  \
                        +tcp_cubic                \
-                       +sched_                   \
+                       +scheduler                \
                        +mass_storage             \
           2>&1 | tee config.info
 
