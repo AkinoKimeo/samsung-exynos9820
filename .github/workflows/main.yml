@@ -73,7 +73,7 @@ jobs:
                        +mass_storage             \
                        +sched_performance        \
                        +dtb                      \
-                       +magisk                   \
+                       +magisk=v24.3             \
                        +noaudit                  \
                        +fake_config              \
           2>&1 | tee config.info
