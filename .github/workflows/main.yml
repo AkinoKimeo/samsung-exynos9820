@@ -3,7 +3,7 @@ name: Build
 on: [push]
 
 env:
-  TOOLCHAIN: proton
+  TOOLCHAIN: cruel
   INSTALLER: yes
 
 jobs:
@@ -55,7 +55,7 @@ jobs:
           set -e -o pipefail
           ./cruelbuild config                    \
                        model=${{ matrix.model }} \
-                       name="Cruel"              \
+                       name="Cruel-devel"        \
                        toolchain=$TOOLCHAIN      \
                        +nohardening              \
                        +ttl                      \
@@ -71,7 +71,8 @@ jobs:
                        +25hz                     \
                        +io_noop                  \
                        +tcp_cubic                \
-                       +mass_storage             
+                       +mass_storage             \
+                       +sched_performance        \
           2>&1 | tee config.info
 
       - name: Install gcc-aarch64-linux-gnu
