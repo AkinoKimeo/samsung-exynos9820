@@ -67,7 +67,7 @@ jobs:
                        +morosound                \
                        +boeffla_wl_blocker       \
                        +nodebug                  \
-                       +1000hz                   \
+                       +25hz                     \
                        +io_noop                  \
                        +tcp_cubic                \
                        +mass_storage             \
@@ -77,6 +77,10 @@ jobs:
                        +noaudit                  \
                        +fake_config              \
                        +performance              \
+                       +noatime                  \
+                       +noksm                    \
+                       +nomodules                \
+                       +usb_serial               \
           2>&1 | tee config.info
 
       - name: Install gcc-aarch64-linux-gnu
