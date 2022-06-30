@@ -80,7 +80,6 @@ jobs:
                        +empty_vbmeta             \
                        +nomodules                \
                        -usb_serial               \
-                       +1000hz                   \
           2>&1 | tee config.info
 
       - name: Install gcc-aarch64-linux-gnu
