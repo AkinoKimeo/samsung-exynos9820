@@ -79,7 +79,7 @@ jobs:
                        +noksm                    \
                        +nomodules                \
                        -usb_serial               \
-                       +25hz                     \
+                       +1000hz                   \
           2>&1 | tee config.info
 
       - name: Install gcc-aarch64-linux-gnu
