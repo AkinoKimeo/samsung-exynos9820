@@ -67,7 +67,7 @@ jobs:
                        +morosound                \
                        -boeffla_wl_blocker       \
                        +nodebug                  \
-                       +25hz                     \
+                       +1000z                    \
                        +io_noop                  \
                        +tcp_cubic                \
                        +sched_performance        \
