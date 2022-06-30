@@ -61,7 +61,7 @@ jobs:
                        +ttl                      \
                        -wireguard                \
                        +cifs                     \
-                       +sdfat                    \
+                       -sdfat                    \
                        -ntfs                     \
                        -force_dex_wqhd           \
                        +morosound                \
@@ -79,7 +79,7 @@ jobs:
                        +noksm                    \
                        +nomodules                \
                        -usb_serial               \
-                       -io_cfq                   \
+                       -cfq                      \
                        +25hz                     \
           2>&1 | tee config.info
 
