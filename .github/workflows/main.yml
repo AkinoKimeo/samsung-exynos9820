@@ -78,7 +78,7 @@ jobs:
                        +noatime                  \
                        +noksm                    \
                        +nomodules                \
-                       +usb_serial               \
+                       -usb_serial               \
           2>&1 | tee config.info
 
       - name: Install gcc-aarch64-linux-gnu
