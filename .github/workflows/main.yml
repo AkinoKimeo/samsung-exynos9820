@@ -61,11 +61,11 @@ jobs:
                        +ttl                      \
                        -wireguard                \
                        +cifs                     \
-                       -sdfat                    \
-                       -ntfs                     \
-                       -force_dex_wqhd           \
+                       +sdfat                    \
+                       +ntfs                     \
+                       +force_dex_wqhd           \
                        +morosound                \
-                       -boeffla_wl_blocker       \
+                       +boeffla_wl_blocker       \
                        +nodebug                  \
                        +io_noop                  \
                        +tcp_cubic                \
@@ -77,9 +77,8 @@ jobs:
                        +performance              \
                        +noatime                  \
                        +noksm                    \
-                       +empty_vbmeta             \
                        +nomodules                \
-                       -usb_serial               \
+                       +usb_serial               \
           2>&1 | tee config.info
 
       - name: Install gcc-aarch64-linux-gnu
