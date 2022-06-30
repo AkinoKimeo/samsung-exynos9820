@@ -56,13 +56,15 @@ jobs:
           ./cruelbuild config                    \
                        model=${{ matrix.model }} \
                        name="Cruel-devel"        \
+                       NODEFAULTS=1              \
                        toolchain=$TOOLCHAIN      \
                        +nohardening              \
+                       +nohardening2             \
                        +ttl                      \
                        -wireguard                \
                        +cifs                     \
-                       +sdfat                    \
-                       +ntfs                     \
+                       -sdfat                    \
+                       -ntfs                     \
                        -force_dex_wqhd           \
                        +morosound                \
                        -boeffla_wl_blocker       \
@@ -78,6 +80,8 @@ jobs:
                        +performance              \
                        +noatime                  \
                        +noksm                    \
+                       +empty_vbmeta             \
+                       -io_cfq                   \
           2>&1 | tee config.info
 
       - name: Install gcc-aarch64-linux-gnu
