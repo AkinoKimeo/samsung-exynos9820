@@ -62,10 +62,10 @@ jobs:
                        -wireguard                \
                        +cifs                     \
                        +sdfat                    \
-                       +ntfs                     \
-                       +force_dex_wqhd           \
+                       -ntfs                     \
+                       -force_dex_wqhd           \
                        +morosound                \
-                       +boeffla_wl_blocker       \
+                       -boeffla_wl_blocker       \
                        +nodebug                  \
                        +io_noop                  \
                        +tcp_cubic                \
