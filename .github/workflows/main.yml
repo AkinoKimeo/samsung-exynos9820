@@ -79,7 +79,6 @@ jobs:
                        +noksm                    \
                        +nomodules                \
                        -usb_serial               \
-                       -cfq                      \
                        +25hz                     \
           2>&1 | tee config.info
 
