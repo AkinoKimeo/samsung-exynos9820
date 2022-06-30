@@ -66,19 +66,14 @@ jobs:
                        -force_dex_wqhd           \
                        +morosound                \
                        -boeffla_wl_blocker       \
-                       +nodebug                  \
                        +io_noop                  \
                        +tcp_cubic                \
                        +sched_performance        \
                        +dtb                      \
                        +magisk=v24.3             \
-                       +noaudit                  \
-                       +fake_config              \
                        +performance              \
-                       +noatime                  \
-                       +noksm                    \
-                       +nomodules                \
-                       -usb_serial               \
+                       +nodebug                  \
+                       +25hz                     \
           2>&1 | tee config.info
 
       - name: Install gcc-aarch64-linux-gnu
