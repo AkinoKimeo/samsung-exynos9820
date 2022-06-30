@@ -56,7 +56,6 @@ jobs:
           ./cruelbuild config                    \
                        model=${{ matrix.model }} \
                        name="Cruel-devel"        \
-                       NODEFAULTS=1              \
                        toolchain=$TOOLCHAIN      \
                        +nohardening              \
                        +nohardening2             \
