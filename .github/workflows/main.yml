@@ -61,8 +61,8 @@ jobs:
                        +ttl                      \
                        -wireguard                \
                        +cifs                     \
-                       -sdfat                    \
-                       -ntfs                     \
+                       +sdfat                    \
+                       +ntfs                     \
                        -force_dex_wqhd           \
                        +morosound                \
                        -boeffla_wl_blocker       \
@@ -74,6 +74,7 @@ jobs:
                        +performance              \
                        +nodebug                  \
                        +25hz                     \
+                       +mass_storage             \
           2>&1 | tee config.info
 
       - name: Install gcc-aarch64-linux-gnu
